@@ -8,7 +8,8 @@
   },
   "dependencies": {
     "ejs": "2.4.1",
-    "express": "4.13.4"
+    "express": "4.13.4",
+    "pg": "^4.4.4"
   },
   "engines": {
     "node": "4.3.0"
@@ -22,5 +23,8 @@
     "heroku",
     "raspberrypi"
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^1.8.1"
+  }
 }

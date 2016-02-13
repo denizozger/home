@@ -2,3 +2,6 @@ node_modules
 .env
 Dockerfile
 docker-compose.yml
+npm-debug.log
+npm-install-63316.sh
+
