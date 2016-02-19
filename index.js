@@ -20,8 +20,8 @@ app.get('/', (req, res) => res.render('pages/index'));
 app.post('/readings', db.addReading);
 app.get('/readings', db.getReadings);
 
-// mqtt broker
-require('./mqtt')();
+// mqtt broker TODO: disabled until we need it
+// require('./mqtt')();
 
 app.listen(app.get('port'), () => {
   console.log('Home is running on port ◕‿◕', app.get('port'));
