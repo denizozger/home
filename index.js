@@ -26,7 +26,7 @@ app.get('/', (req, res, next) => {
 
 // api
 app.post('/readings', (req, res, next) => {
-	db.addReadingAsync()
+	db.addReadingAsync(req.body)
 		.then(() => res.sendStatus(200))
 		.catch(next)
 });

@@ -6,7 +6,7 @@ const
 exports.addReading = (data, cb) => {
   pg.connect(process.env.DATABASE_URL + '?ssl=true', function(err, client, done) {
     client.query('INSERT INTO readings (temperature, pressure, humidity, created_at) VALUES($1, $2, $3, $4) RETURNING id',
-      [req.body.temperature, req.body.pressure, req.body.humidity, req.body.time],
+      [data.temperature, data.pressure, data.humidity, data.time],
       function(err, result) {
         done();
         if (err) {
