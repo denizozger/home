@@ -30,7 +30,7 @@
               <td><%= r.temperature %></td>
               <td><%= r.pressure %></td>
               <td><%= r.humidity %></td>
-              <td><%= r.created_at %></td>
+              <td><%= new Date(parseInt(r.created_at) * 1000) %></td>
             </tr>
         <% }); %>
       </tbody>
