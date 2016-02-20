@@ -14,7 +14,7 @@ exports.addReading = (data, cb) => {
           return cb(err);
         }
 
-        console.log('Reading [%j] inserted with id [%s] ', req.body, result.rows[0].id);
+        console.log('Reading [%j] inserted with id [%s] ', data, result.rows[0].id);
         return cb(null, result.rows[0].id)
     });
   });
